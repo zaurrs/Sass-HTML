@@ -1,0 +1,105 @@
+header {
+
+    width: 100%;
+    margin: auto;
+
+    .navcolor {
+        width: 100%;
+        background-color: $navColor;
+    }
+
+    .container {
+
+
+        .nav_top {
+            background-color: $navColor;
+            @include flex(space-between);
+            height: 4.8rem;
+
+            .phone {
+                @include flex;
+                gap: 1.6rem;
+
+                p {
+                    color: $whiteColor;
+                }
+
+                img {
+                    width: 2.4rem;
+                    height: 2.4rem
+                }
+            }
+
+        }
+
+        .service {
+            @include flex(center);
+            gap: 2rem;
+
+            div:nth-child(2) {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding: 0 1.6rem;
+            }
+
+            div a {
+                color: $whiteColor;
+            }
+        }
+
+    }
+
+    .container {
+        .navtop {
+            @include flex(space-between);
+
+            .logo {
+                h1 {
+                    font-weight: 15.6rem;
+                    font-size: 4rem;
+
+                    a {
+                        color: $blackColor;
+                    }
+                }
+            }
+
+            .inp {
+                width: 50.4rem;
+                height: 4.8rem;
+                border: 2px solid rgb(236, 81, 228);
+                position: relative;
+            }
+
+            .inp input {
+                padding: 1.4rem 1.6rem;
+                outline: none;
+                border: none;
+
+            }
+
+            .abc {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+            }
+
+            .img {
+                @include flex;
+                gap: 1.6rem;
+            }
+        }
+
+        .navbottom {
+            ul {
+                @include flex(start);
+                gap: 6rem;
+
+                li a {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
